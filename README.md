@@ -25,24 +25,32 @@ The russian version of the task can be found in the repository.
 
 Chuck was running late, so he was in a hurry and couldn't sit still. Only the occasional stern look from the cab driver in the rearview mirror humbled him each time.
 
-*-- “Could you go any faster, I'm in a hurry,“ Chuck said harshly.*
+*- “Could you go any faster, I'm in a hurry,“* Chuck said harshly.
 
 *- “Young man, I'm going the maximum speed allowed here, and I'm not going to break the rules for no reason. Calm down, we're almost there. And you could have left the house earlier...“* Chuck skipped further lectures and switched back to his phone. Time was running out. \
 
-*-- Did you finish the basic logic for the calculator?*
+Buildings, palm trees, and people with dogs flew by the window. California is usually hot this time of year, so many people were sunbathing on their lawns. But Chuck wasn't really interested in that; he glanced from time to time at the map and at the time on his phone, checking how much longer he had left to go. He didn't fly halfway across the country for sun, beach, and relaxation. His mission was to find answers to his questions, and some anonymous person had kindly agreed to provide them. Yes, the text message from him wasn't very informative: just an address, a time, and promises of answers, but Chuck felt that he was sure to get help here. He got as close to the truth as he could. The cab pulled up to a small square with three people standing there. Chuck's mind was spinning, "I hope I'm not too late, I hope I'm not too late. He shot out of the cab, dropping his bag on the ground. The driver shouted something to him, but at that moment another familiar voice caught Chuck's attention:
 
-*- Ah, it's still in progress. The meeting with Steve will be tomorrow?*
+*- “Chuck?! And you're here, too?“* Eve said slightly surprised.
 
-*-- That's right. If we can show him some basic arithmetic operations with a refactored program structure, I think he'll like it.*
+*- “Oh, hi, Eve! What a far-off place to meet. How small the world is! And what do you mean, here? Did you get that weird text message, too?“* Chuck seemed to be out of breath, constantly looking around for either potential dangers or something interesting. *“I hope I'm not too late.“*
 
-For more than a week now, you've been helping Chris Espinosa rewrite an object-oriented calculator in the evenings. Its latest version in the standard structured approach turned out to be not flexible and extensible enough for Steve Jobs who was bursting with ideas. So, you and Chris decided to try the emerging object-oriented programming paradigm in the young C++ language to solve these problems. Of course, learning new technologies caused some... difficulties, but there is hope that it will not be necessary to completely rewrite the calculator for the eighth time.
+*- “We all got this text here,“* John interjected. *“I'm John, this is Thomas.“*
 
-*- Well, then, let's speed it up.*
+*- “I'm Chuck. Never thought it would be such a mysterious meeting in the middle of nowhere,“* Chuck said in response, looking around.
 
-*-- By the way, I crossed paths with a developer from Norway the other day: Torkve or Trykve, I don't remember.* \
-*Anyway, he told me about one scheme for organizing data and application logic, which allows us to change some components very flexibly and quickly. For example, we can completely separate the interface from the rest of the code, you know? And if Steve doesn't like something in the interface again, it can be changed quickly and safely. We wouldn't even need to rewrite the tests for the rest of the logic.*
+*- “It's not exactly nothing here, though,“* Thomas replied. *“Until a few months ago there was a nice lively jazz club here, owned by the father of a good friend of mine. Who, as it turned out, was an acquaintance of John's. He was a colleague of yours, wasn't he? Except neither John nor I had heard from him in over three months. And the club... Well, you can see how it's turned out,“* Thomas looked sadly at the building.
 
-*- Sounds like exactly what we need! I'm all ears.*
+*- “Where did you work?“* Eve asked John.
+
+*- “A local division of SIS, John muttered back. Administration of network applications and configuration of computer hardware.“*
+
+*- “Chuck and I are also from SIS. Different departments and the Eastern division, but still,“* Eve said thoughtfully. *“Where do you work, Thomas?"*
+
+*- “Advanced Solutions Inc. Daughter of SIS, transferred there quite recently. I had to take a vacation to get here, but I was seriously worried about Seb, and apparently not for nothing. Turns out we're all related to SIS in one way or another.“*
+
+*- “And not only to it, right, Eve? Chuck said. I've got some documents here that I think you might find interesting, so where are they...“* Who knows where this conversation would have gone if not for the simultaneous beeping and vibrating of smartphones in everyone's pockets that occurred at that moment.
+
 
 ## Introduction
 
