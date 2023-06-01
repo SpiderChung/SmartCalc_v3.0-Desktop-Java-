@@ -14,7 +14,8 @@ The russian version of the task can be found in the repository.
    3.1. [Part 1](#part-1-implementation-of-smartcalc-v20) \
    3.2. [Part 2](#part-2-bonus-credit-calculator) \
    3.3. [Part 3](#part-3-bonus-deposit-calculator)
-
+   3.4. [Part 4](#part-3-bonus-configuration_and_logging)
+   3.5. [Part 5](#part-3-bonus-cross_platform)
 
 ## Chapter I
 
