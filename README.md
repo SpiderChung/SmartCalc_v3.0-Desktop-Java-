@@ -23,13 +23,11 @@ The russian version of the task can be found in the repository.
 
 ![smartcalcv3.0](smartcalc3.0_subject.png)
 
-Planet Earth, USA, California, somewhere in Cupertino, 20 August 1983.
+Chuck was running late, so he was in a hurry and couldn't sit still. Only the occasional stern look from the cab driver in the rearview mirror humbled him each time.
 
-Chris put a paper cup of coffee next to you on the table, so that woke you up.
+*-- “Could you go any faster, I'm in a hurry,“ Chuck said harshly.*
 
-*-- Pure black americano, I heard you like it. It'll help you wake up.*
-
-*- Oh, yes, I really need it, thanks. Where were we?* - you asked, drinking your hot coffee.
+*- “Young man, I'm going the maximum speed allowed here, and I'm not going to break the rules for no reason. Calm down, we're almost there. And you could have left the house earlier...“* Chuck skipped further lectures and switched back to his phone. Time was running out. \
 
 *-- Did you finish the basic logic for the calculator?*
 
