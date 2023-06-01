@@ -51,6 +51,13 @@ Buildings, palm trees, and people with dogs flew by the window. California is us
 
 *- “And not only to it, right, Eve? Chuck said. I've got some documents here that I think you might find interesting, so where are they...“* Who knows where this conversation would have gone if not for the simultaneous beeping and vibrating of smartphones in everyone's pockets that occurred at that moment.
 
+---… | ***… | ___…
+---… | ***… | ___…
+
+Chuck couldn't keep a slight smile off his face and whispered just one word:
+
+*- “The Terminator...“*
+
 
 ## Introduction
 
