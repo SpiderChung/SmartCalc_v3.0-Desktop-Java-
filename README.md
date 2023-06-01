@@ -1,4 +1,4 @@
-# SmartCalc v2.0
+# SmartCalc v3.0
 
 > При старте работы над проектом просим вас постараться хронометрировать время работы над проектом.
 > По завершении работы над проектом просим вас ответить на два вопроса [в этом опросе](https://forms.gle/GmDeKHa7bJN3fKAo8)
@@ -21,7 +21,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![smartcalcv2.0](misc/images/smartcalcv2.0.PNG)
+![smartcalcv3.0](misc/images/smartcalcv2.0.PNG)
 
 Planet Earth, USA, California, somewhere in Cupertino, 20 August 1983.
 
@@ -59,18 +59,17 @@ Note that you should use *Dijkstra's algorithm* to translate expressions into *r
 
 ### MVC pattern
 
-The Model-View-Controller (MVC) pattern is a scheme of separating application modules into three macro-components: a model that contains the business logic, a view that is a UI form to interact with the program, and a controller that modifies the model by user action.
+The MVP pattern has two components in common with MVC: the model and the view. But it replaces the controller with a presenter.
 
-The concept of MVC was introduced by Trygve Reenskaug in 1978, who was working on the Smalltalk programming language at Xerox PARC. Later, Steve Burbeck implemented the pattern in Smalltalk-80.
-The final version of the MVC concept was published in the journal Technology Object in 1988. The MVC pattern subsequently evolved, giving rise to variants such as HMVC, MVA, MVVM.
+The presenter implements the interaction between the model and the view. When the view notifies the presenter that the user has done something (e.g., pressed a button), the presenter decides to update the model and synchronizes all changes between the model and the view. However, the presenter does not interact with the view directly. Instead, it uses an interface to communicate. This allows all components of the application to be tested individually afterwards.
 
-The main need for this pattern stems from the developers' desire to separate the business logic of the program from the views, which makes it easy to replace views and to reuse logic that has been implemented once in other environments. A model separated from the view and a controller to interact with it allows you to reuse or modify already written code more efficiently.
+### MVVM pattern
 
-The model stores and accesses the main data, performs operations on requests, defined by the business logic of the program that means it is in charge of the part of the program responsible for all algorithms and information processing. These models, modified by the controller, affect the information display on the user interface. The model in this program should be the class library that performs the calculations. This library must provide all the necessary classes and methods to perform them. And this is the business logic of the program, because it provides the means to solve the problem.
+MVVM is a more modern update of MVC. The main purpose of MVVM is to provide a clear separation between the presentation and model layers. MVVM supports two-way data binding between View and ViewModel components.
 
-A controller is a thin macro component that performs model modifications. It is used to generate requests for it. In code, it looks like a kind of "facade" for the model that means a set of methods that already work directly with the model. It is called thin because the ideal controller contains no additional logic other than calling one or more methods of the model. The controller serves as a link between the interface and the model. This allows the model to be fully encapsulated from the display. This separation is helpful in that it allows the view code to know nothing about the model code and to address only the controller, whose interface of the provided functions will probably be not changed much. The model, on the other hand, can undergo significant changes, and if you "move" to other algorithms, technologies, or even programming languages in the model, only a small section of code in the controller directly related to the model will need to be changed. Otherwise, it would probably be necessary to rewrite a significant part of the interface code, as it would depend a lot on the implementation of the model. So, when interacting with the interface, the user calls controller methods that modify the model.
+The view acts as a subscriber to property value change events provided by the view model (ViewModel). If a property has changed in the view model, it notifies all subscribers about it, and the view, in turn, requests the updated property value from the view model. If the user interacts with an interface element, the view calls the corresponding command provided by the view model.
 
-The view includes all code associated with the program interface. An ideal interface code should not contain any business logic. It only represents the form for interaction with the user.
+A view model is on the one hand an abstraction of a view, and on the other hand a wrapper of data from the model to be bound. In other words, it contains the model transformed to the view, as well as the commands the view can use to affect the model.
 
 ![](misc/images/MVC-Process.png)
 
