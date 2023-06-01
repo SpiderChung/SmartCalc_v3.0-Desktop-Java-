@@ -1,9 +1,6 @@
 # SmartCalc v3.0
 
-> При старте работы над проектом просим вас постараться хронометрировать время работы над проектом.
-> По завершении работы над проектом просим вас ответить на два вопроса [в этом опросе](https://forms.gle/GmDeKHa7bJN3fKAo8)
-
-Implementation of SmartCalc v2.0.
+Implementation of SmartCalc v3.0.
 
 The russian version of the task can be found in the repository.
 
