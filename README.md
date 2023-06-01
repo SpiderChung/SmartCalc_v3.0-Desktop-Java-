@@ -1,166 +1,142 @@
-SmartCalc v3.0
-Implementation of SmartCalc v3.0 in Java.
+# SmartCalc v2.0
 
-Contents
-Chapter I
-1.1. Introduction
-Chapter II
-2.1. MVP pattern
-2.2. MVVM pattern
-Chapter III
-3.1. Part 1
-3.2. Part 2
-3.3. Part 3
-3.4. Part 4
-3.5. Part 5
-Chapter IV
-Chapter I
-SmartCalc_v3.0_Desktop
+> При старте работы над проектом просим вас постараться хронометрировать время работы над проектом.
+> По завершении работы над проектом просим вас ответить на два вопроса [в этом опросе](https://forms.gle/GmDeKHa7bJN3fKAo8)
 
-Chuck was running late, so he was in a hurry and couldn't sit still. Only the occasional stern look from the cab driver in the rearview mirror humbled him each time.
+Implementation of SmartCalc v2.0.
 
-- “Could you go any faster, I'm in a hurry,“ Chuck said harshly.
+The russian version of the task can be found in the repository.
 
-- “Young man, I'm going the maximum speed allowed here, and I'm not going to break the rules for no reason. Calm down, we're almost there. And you could have left the house earlier...“ Chuck skipped further lectures and switched back to his phone. Time was running out. \
+## Contents
 
-Buildings, palm trees, and people with dogs flew by the window. California is usually hot this time of year, so many people were sunbathing on their lawns. But Chuck wasn't really interested in that; he glanced from time to time at the map and at the time on his phone, checking how much longer he had left to go. He didn't fly halfway across the country for sun, beach, and relaxation. His mission was to find answers to his questions, and some anonymous person had kindly agreed to provide them. Yes, the text message from him wasn't very informative: just an address, a time, and promises of answers, but Chuck felt that he was sure to get help here. He got as close to the truth as he could. The cab pulled up to a small square with three people standing there. Chuck's mind was spinning, "I hope I'm not too late, I hope I'm not too late. He shot out of the cab, dropping his bag on the ground. The driver shouted something to him, but at that moment another familiar voice caught Chuck's attention:
-
-- “Chuck?! And you're here, too?“ Eve said slightly surprised.
-
-- “Oh, hi, Eve! What a far-off place to meet. How small the world is! And what do you mean, here? Did you get that weird text message, too?“ Chuck seemed to be out of breath, constantly looking around for either potential dangers or something interesting. “I hope I'm not too late.“
-
-- “We all got this text here,“ John interjected. “I'm John, this is Thomas.“
-
-- “I'm Chuck. Never thought it would be such a mysterious meeting in the middle of nowhere,“ Chuck said in response, looking around.
-
-- “It's not exactly nothing here, though,“ Thomas replied. “Until a few months ago there was a nice lively jazz club here, owned by the father of a good friend of mine. Who, as it turned out, was an acquaintance of John's. He was a colleague of yours, wasn't he? Except neither John nor I had heard from him in over three months. And the club... Well, you can see how it's turned out,“ Thomas looked sadly at the building.
-
-- “Where did you work?“ Eve asked John.
-
-- “A local division of SIS, John muttered back. Administration of network applications and configuration of computer hardware.“
-
-- “Chuck and I are also from SIS. Different departments and the Eastern division, but still,“ Eve said thoughtfully. “Where do you work, Thomas?
-
-- “Advanced Solutions Inc. Daughter of SIS, transferred there quite recently. I had to take a vacation to get here, but I was seriously worried about Seb, and apparently not for nothing. Turns out we're all related to SIS in one way or another.“
-
-- “And not only to it, right, Eve? Chuck said. I've got some documents here that I think you might find interesting, so where are they...“ Who knows where this conversation would have gone if not for the simultaneous beeping and vibrating of smartphones in everyone's pockets that occurred at that moment.
-
-Greetings to all! I'm very happy that you were interested and were able to get to your destination right in time. You are gathered here for a reason and will indeed get all the answers. But only after a little test. There is one task that they liked to test me on. But now it's time to switch places a little bit. Prove that you are ready and able to handle the tasks ahead, and then I will answer all of your questions. A test with details is already waiting for you in your personal repositories. Please begin immediately. Thank you.
-
-Chuck couldn't keep a slight smile off his face and whispered just one word:
-
-- “The Terminator...“
-
-Introduction
-In this project you will implement an extended version of the usual calculator in the Java programming language, which implements the same functions as the previously developed application in the SmartCalc v2.0 project. You will improve your skills in the new programming language, learn the MVP or MVVM pattern, and add the help and history functionality to the application.
-
-Chapter II
-MVP pattern
-The MVP pattern has two components in common with MVC: the model and the view. But it replaces the controller with a presenter.
-
-The presenter implements the interaction between the model and the view. When the view notifies the presenter that the user has done something (e.g., pressed a button), the presenter decides to update the model and synchronizes all changes between the model and the view. However, the presenter does not interact with the view directly. Instead, it uses an interface to communicate. This allows all components of the application to be tested individually afterwards.
+1. [Chapter I](#chapter-i) \
+   1.1. [Introduction](#introduction)
+2. [Chapter II](#chapter-ii) \
+   2.1. [Information](#information)
+3. [Chapter III](#chapter-iii) \
+   3.1. [Part 1](#part-1-implementation-of-smartcalc-v20) \
+   3.2. [Part 2](#part-2-bonus-credit-calculator) \
+   3.3. [Part 3](#part-3-bonus-deposit-calculator)
 
 
+## Chapter I
 
-MVVM pattern
-MVVM is a more modern update of MVC. The main purpose of MVVM is to provide a clear separation between the presentation and model layers. MVVM supports two-way data binding between View and ViewModel components.
+![smartcalcv2.0](misc/images/smartcalcv2.0.PNG)
 
-The view acts as a subscriber to property value change events provided by the view model (ViewModel). If a property has changed in the view model, it notifies all subscribers about it, and the view, in turn, requests the updated property value from the view model. If the user interacts with an interface element, the view calls the corresponding command provided by the view model.
+Planet Earth, USA, California, somewhere in Cupertino, 20 August 1983.
 
-A view model is on the one hand an abstraction of a view, and on the other hand a wrapper of data from the model to be bound. In other words, it contains the model transformed to the view, as well as the commands the view can use to affect the model.
+Chris put a paper cup of coffee next to you on the table, so that woke you up.
+
+*-- Pure black americano, I heard you like it. It'll help you wake up.*
+
+*- Oh, yes, I really need it, thanks. Where were we?* - you asked, drinking your hot coffee.
+
+*-- Did you finish the basic logic for the calculator?*
+
+*- Ah, it's still in progress. The meeting with Steve will be tomorrow?*
+
+*-- That's right. If we can show him some basic arithmetic operations with a refactored program structure, I think he'll like it.*
+
+For more than a week now, you've been helping Chris Espinosa rewrite an object-oriented calculator in the evenings. Its latest version in the standard structured approach turned out to be not flexible and extensible enough for Steve Jobs who was bursting with ideas. So, you and Chris decided to try the emerging object-oriented programming paradigm in the young C++ language to solve these problems. Of course, learning new technologies caused some... difficulties, but there is hope that it will not be necessary to completely rewrite the calculator for the eighth time.
+
+*- Well, then, let's speed it up.*
+
+*-- By the way, I crossed paths with a developer from Norway the other day: Torkve or Trykve, I don't remember.* \
+*Anyway, he told me about one scheme for organizing data and application logic, which allows us to change some components very flexibly and quickly. For example, we can completely separate the interface from the rest of the code, you know? And if Steve doesn't like something in the interface again, it can be changed quickly and safely. We wouldn't even need to rewrite the tests for the rest of the logic.*
+
+*- Sounds like exactly what we need! I'm all ears.*
+
+## Introduction
+
+In this project you’ll need to implement an extended version of the standard calculator in C++ in the object-oriented programming paradigm, implementing the same functions as the previously developed application in SmartCalc v1.0 project. In addition to basic arithmetic operations such as add/subtract and multiply/divide, you need to supplement the calculator with the ability to calculate arithmetic expressions by following the order, as well as some mathematical functions (sine, cosine, logarithm, etc.). Besides calculating expressions, it should also support the use of the _x_ variable and the graphing of the corresponding function. As for other improvements you can consider a credit and deposit calculator.
 
 
+## Chapter II
 
-Chapter III
-Part 1. SmartCalc v3.0 implementation
-You need to implement SmartCalc v3.0:
+## Information
 
-The program must be developed in Java 8
-The program code must be located in the src folder
-You must stick to Google Code Style when writing code
-You need to develop a desktop application
-Prepare the installer, which will install the application to the system with the standard settings (installation path, creating a shortcut)
-Prepare an implementation with a graphical user interface for Mac OS, based on any GUI library or framework (GUI layer implementation in HTML/CSS/JS is acceptable)
-The program must be implemented using the MVVM or MVP pattern, and
-there should be no business logic code in the view code
-there must be no interface code in the model, presenter and view model
-The "core" of the calculator in the form of an algorithm for the formation and calculation of the Polish notation and various computational functions connect as a dynamic library in C/C++ from the SmartCalc v1.0 or SmartCalc v2.0 projects
-The model should be a "core" with a wrapper in Java
-The model must have all the calculator's functionality so that it can be used in the future without the other layers
-Prepare full coverage of methods in the model layer with unit tests
-The application should have a help section with a description of the program interface in random form
-The program must save the history of operations, allow loading expressions from the history and clear the entire history
-History must be saved between runs of the application
-Both integers and real numbers, written either via a point or in exponential form, can be input to the program
-Calculation should be performed after the complete entry of the calculated expression and pressing the symbol =
-Calculation of arbitrary bracketed arithmetic expressions in infix notation
-Calculation of arbitrary bracketed arithmetic expressions in infix notation with substitution of x variable as a number
-Plotting a function defined using an expression in infix notation with the variable x (with coordinate axes, scale marker, and grid with adaptive step)
-It is not necessary to provide the user with the ability to change the scale
-The range of definition and the range of value of the functions are at least limited to numbers from -1000000 to 1000000
-To plot a function it is necessary to additionally specify the displayed area of definition and area of value
-Checked accuracy of the fractional part is at least 7 decimal places
-The user must be able to enter up to 255 characters
-Bracketed arithmetic expressions in infix notation must support the following arithmetic operations and mathematical functions:
-Arithmetic operators:
+Note that you should use *Dijkstra's algorithm* to translate expressions into *reverse Polish notation* to implement the calculator. You can find all the necessary information in the SmartCalc v1.0 project description to refresh your knowledge.
 
-Operator name	Infix Notation
-(Classic)	Prefix notation
-(Polish notation)	Postfix notation
-(Reverse Polish notation)
-Parentheses	(a + b)	(+ a b)	a b +
-Addition	a + b	+ a b	a b +
-Subtraction	a - b	- a b	a b -
-Multiplication	a * b	* a b	a b *
-Division	a / b	/ a b	a b \
-Rasing to the power	a ^ b	^ a b	a b ^
-Remainder of division	a mod b	mod a b	a b mod
-Unary plus	+a	+a	a+
-Unary minus	-a	-a	a-
-Please note that the multiplication operator contains a mandatory * sign. Processing an expression with the * sign omitted is optional and left to the developer's discretion
+### MVC pattern
 
-Function description	Function
-Calculates cosine	cos(x)
-Calculates sine	sin(x)
-Calculates tangent	tan(x)
-Calculates arc cosine	acos(x)
-Calculates the arcsine	asin(x)
-Calculates arctangent	atan(x)
-Calculates square root	sqrt(x)
-Calculates natural logarithm	ln(x)
-Calculates decimal logarithm	log(x)
-Part 2. Bonus. Loan сalculator
-Provide a special mode "loan calculator" (you can take websites like banki.ru and calcus.ru as an example):
+The Model-View-Controller (MVC) pattern is a scheme of separating application modules into three macro-components: a model that contains the business logic, a view that is a UI form to interact with the program, and a controller that modifies the model by user action.
 
-Input: total loan amount, term, interest rate, type (annuity, differentiated)
-Output: monthly payment, overpayment for the loan, total repayment
-Part 3. Bonus. Deposit calculator
-Provide a special mode "deposit calculator" (you can take websites like banki.ru and calcus.ru as an example):
+The concept of MVC was introduced by Trygve Reenskaug in 1978, who was working on the Smalltalk programming language at Xerox PARC. Later, Steve Burbeck implemented the pattern in Smalltalk-80.
+The final version of the MVC concept was published in the journal Technology Object in 1988. The MVC pattern subsequently evolved, giving rise to variants such as HMVC, MVA, MVVM.
 
-Input: deposit amount, deposit term, interest rate, tax rate, periodicity of payments, capitalization of interest, list of additions, list of partial withdrawals
-Output: accrued interest, tax amount, amount on deposit by the end of the term
-Part 4. Bonus. Configuration and logging
-Add settings to the application:
+The main need for this pattern stems from the developers' desire to separate the business logic of the program from the views, which makes it easy to replace views and to reuse logic that has been implemented once in other environments. A model separated from the view and a controller to interact with it allows you to reuse or modify already written code more efficiently.
 
-Add reading of settings from configuration file when the program runs
-Include in the configuration file 3 or more parameters to choose from, such as background color, font size, etc.
-Add descriptions of editable parameters to help
-Add logging to the application:
+The model stores and accesses the main data, performs operations on requests, defined by the business logic of the program that means it is in charge of the part of the program responsible for all algorithms and information processing. These models, modified by the controller, affect the information display on the user interface. The model in this program should be the class library that performs the calculations. This library must provide all the necessary classes and methods to perform them. And this is the business logic of the program, because it provides the means to solve the problem.
 
-Store operation history in logs
-Save logs in the logs folder, one file per rotation period
-It should be possible to set the period of logs rotation (hour/day/month)
-Files must be named according to the following pattern: logs_dd-MM-yy-hh-mm-ss (the time of file creation)
-Part 5. Bonus. Cross-platform
-Make your application cross-platform:
+A controller is a thin macro component that performs model modifications. It is used to generate requests for it. In code, it looks like a kind of "facade" for the model that means a set of methods that already work directly with the model. It is called thin because the ideal controller contains no additional logic other than calling one or more methods of the model. The controller serves as a link between the interface and the model. This allows the model to be fully encapsulated from the display. This separation is helpful in that it allows the view code to know nothing about the model code and to address only the controller, whose interface of the provided functions will probably be not changed much. The model, on the other hand, can undergo significant changes, and if you "move" to other algorithms, technologies, or even programming languages in the model, only a small section of code in the controller directly related to the model will need to be changed. Otherwise, it would probably be necessary to rewrite a significant part of the interface code, as it would depend a lot on the implementation of the model. So, when interacting with the interface, the user calls controller methods that modify the model.
 
-Add support for Linux
-Add support for Windows
-The installer should also be available for Linux and Windows (several different installers are allowed)
-Chapter IV
-Chuck finished the calculator without too much trouble. He learned Java back in his university days, so he quickly put together a simple desktop application. The other guys seemed to be finishing their work, too.
-As soon as everyone had finished their work, new messages from an anonymous person popped up on their phones:
+The view includes all code associated with the program interface. An ideal interface code should not contain any business logic. It only represents the form for interaction with the user.
 
-Thank you. I see you all did well. That's great, even though the algorithms predicted it from the beginning. Please set up a secure connection to the server specified in the following message and connect to the specified chat room. There we will be able to talk freely and calmly. I also have some special information for Thomas and John regarding your friend, Seb. I will expect you in the chat room!
+![](misc/images/MVC-Process.png)
 
-💡 Tap here to leave your feedback on the project. Pedago Team really tries to make your educational experience better.
+
+## Chapter III
+
+## Part 1. Implementation of SmartCalc v2.0
+
+You need to implement the SmartCalc v2.0:
+
+- The program must be developed in C++ language of C++17 standard
+- The program code must be located in the src folder
+- When writing code it is necessary to follow the Google style
+- Classes must be implemented within the `s21` namespace
+- Prepare full coverage of expression calculation modules with unit-tests using the GTest library
+- The program must be built with Makefile which contains standard set of targets for GNU-programs: all, install, uninstall, clean, dvi, dist, tests. Installation directory could be arbitrary
+- GUI implementation, based on any GUI library with API for C++17: Qt, SFML, GTK+, Nanogui, Nngui, etc.
+- The program must be implemented using the MVC pattern, and also:
+   - there should be no business logic code in the view code
+   - there should be no interface code in the controller and the model
+   - controllers must be thin
+- Both integers and real numbers with a dot can be input into the program. You should provide the input of numbers in exponential notation
+- The calculation must be done after you complete entering the calculating expression and press the `=` symbol.
+- Calculating arbitrary bracketed arithmetic expressions in infix notation
+- Calculate arbitrary bracketed arithmetic expressions in infix notation with substitution of the value of the variable _x_ as a number
+- Plotting a graph of a function given by an expression in infix notation with the variable _x_ (with coordinate axes, mark of the used scale and an adaptive grid)
+   - It is not necessary to provide the user with the ability to change the scale
+- Domain and codomain of a function are limited to at least numbers from -1000000 to 1000000
+   - To plot a graph of a function it is necessary to additionally specify the displayed domain and codomain
+- Verifiable accuracy of the fractional part is at least to 7 decimal places
+- Users must be able to enter up to 255 characters
+- Bracketed arithmetic expressions in infix notation must support the following arithmetic operations and mathematical functions:
+   - **Arithmetic operators**:
+     | Operator name | Infix notation <br /> (Classic) | Prefix notation <br /> (Polish notation) |  Postfix notation <br /> (Reverse Polish notation) |
+      | --------- | ------ | ------ | ------ |
+      | Brackets | (a + b) | (+ a b) | a b + |
+      | Addition | a + b | + a b | a b + |
+      | Subtraction | a - b | - a b | a b - |
+      | Multiplication | a * b | * a b | a b * |
+      | Division | a / b | / a b | a b \ |
+      | Power | a ^ b | ^ a b | a b ^ |
+      | Modulus | a mod b | mod a b | a b mod |
+      | Unary plus | +a | +a | a+ |
+      | Unary minus | -a | -a | a- |
+      >Note that the multiplication operator contains the obligatory sign `*`. Processing an expression with the omitted `*` sign is optional and is left to the developer's decision
+   - **Functions**:
+      | Function description | Function |
+      | ------ | ------ |
+      | Computes cosine | cos(x) |
+      | Computes sine | sin(x) |
+      | Computes tangent | tan(x) |
+      | Computes arc cosine | acos(x) |
+      | Computes arc sine | asin(x) |
+      | Computes arc tangent | atan(x) |
+      | Computes square root | sqrt(x) |
+      | Computes natural logarithm | ln(x) |
+      | Computes common logarithm | log(x) |
+
+## Part 2. Bonus. Credit calculator
+
+Provide a special mode "credit calculator" (you can take banki.ru and calcus.ru as an example):
+- Input: total credit amount, term, interest rate, type (annuity, differentiated)
+- Output: monthly payment, overpayment on credit, total payment
+
+## Part 3. Bonus. Deposit calculator
+
+Provide a special mode "deposit profitability calculator" (you can take banki.ru and calcus.ru as an example):
+- Input: deposit amount, deposit term, interest rate, tax rate, periodicity of payments, capitalization of interest, replenishments list, partial withdrawals list
+- Output: accrued interest, tax amount, deposit amount by the end of the term
