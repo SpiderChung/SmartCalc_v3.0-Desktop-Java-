@@ -21,7 +21,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![smartcalcv3.0](misc/images/smartcalcv2.0.PNG)
+![smartcalcv3.0](smartcalc3.0_subject.png)
 
 Planet Earth, USA, California, somewhere in Cupertino, 20 August 1983.
 
