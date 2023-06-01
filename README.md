@@ -59,14 +59,9 @@ Chuck couldn't keep a slight smile off his face and whispered just one word:
 
 ## Introduction
 
-In this project you’ll need to implement an extended version of the standard calculator in C++ in the object-oriented programming paradigm, implementing the same functions as the previously developed application in SmartCalc v1.0 project. In addition to basic arithmetic operations such as add/subtract and multiply/divide, you need to supplement the calculator with the ability to calculate arithmetic expressions by following the order, as well as some mathematical functions (sine, cosine, logarithm, etc.). Besides calculating expressions, it should also support the use of the _x_ variable and the graphing of the corresponding function. As for other improvements you can consider a credit and deposit calculator.
-
+In this project you will implement an extended version of the usual calculator in the Java programming language, which implements the same functions as the previously developed application in the SmartCalc v2.0 project. You will improve your skills in the new programming language, learn the MVP or MVVM pattern, and add the help and history functionality to the application.
 
 ## Chapter II
-
-## Information
-
-Note that you should use *Dijkstra's algorithm* to translate expressions into *reverse Polish notation* to implement the calculator. You can find all the necessary information in the SmartCalc v1.0 project description to refresh your knowledge.
 
 ### MVC pattern
 
@@ -82,36 +77,38 @@ The view acts as a subscriber to property value change events provided by the vi
 
 A view model is on the one hand an abstraction of a view, and on the other hand a wrapper of data from the model to be bound. In other words, it contains the model transformed to the view, as well as the commands the view can use to affect the model.
 
-![](misc/images/MVC-Process.png)
-
-
 ## Chapter III
 
-## Part 1. Implementation of SmartCalc v2.0
+## Part 1. Implementation of SmartCalc v3.0
 
-You need to implement the SmartCalc v2.0:
+You need to implement the SmartCalc v3.0:
 
-- The program must be developed in C++ language of C++17 standard
+- The program must be developed in Java 8
 - The program code must be located in the src folder
-- When writing code it is necessary to follow the Google style
-- Classes must be implemented within the `s21` namespace
-- Prepare full coverage of expression calculation modules with unit-tests using the GTest library
-- The program must be built with Makefile which contains standard set of targets for GNU-programs: all, install, uninstall, clean, dvi, dist, tests. Installation directory could be arbitrary
-- GUI implementation, based on any GUI library with API for C++17: Qt, SFML, GTK+, Nanogui, Nngui, etc.
-- The program must be implemented using the MVC pattern, and also:
-   - there should be no business logic code in the view code
-   - there should be no interface code in the controller and the model
-   - controllers must be thin
-- Both integers and real numbers with a dot can be input into the program. You should provide the input of numbers in exponential notation
-- The calculation must be done after you complete entering the calculating expression and press the `=` symbol.
-- Calculating arbitrary bracketed arithmetic expressions in infix notation
-- Calculate arbitrary bracketed arithmetic expressions in infix notation with substitution of the value of the variable _x_ as a number
-- Plotting a graph of a function given by an expression in infix notation with the variable _x_ (with coordinate axes, mark of the used scale and an adaptive grid)
-   - It is not necessary to provide the user with the ability to change the scale
-- Domain and codomain of a function are limited to at least numbers from -1000000 to 1000000
-   - To plot a graph of a function it is necessary to additionally specify the displayed domain and codomain
-- Verifiable accuracy of the fractional part is at least to 7 decimal places
-- Users must be able to enter up to 255 characters
+- You must stick to Google Code Style when writing code
+- You need to develop a desktop application
+- Prepare the installer, which will install the application to the system with the standard settings (installation path, creating a shortcut)
+- Prepare an implementation with a graphical user interface for Mac OS, based on any GUI library or framework (GUI layer implementation in HTML/CSS/JS is acceptable)
+- The program must be implemented using the MVVM or MVP pattern, and
+there should be no business logic code in the view code
+there must be no interface code in the model, presenter and view model
+- The "core" of the calculator in the form of an algorithm for the formation and calculation of the Polish notation and various computational functions connect as a dynamic library in C/C++ from the SmartCalc v1.0 or SmartCalc v2.0 projects
+- The model should be a "core" with a wrapper in Java
+- The model must have all the calculator's functionality so that it can be used in the future without the other layers
+- Prepare full coverage of methods in the model layer with unit tests
+- The application should have a help section with a description of the program interface in random form
+- The program must save the history of operations, allow loading expressions from the history and clear the entire history
+- History must be saved between runs of the application
+- Both integers and real numbers, written either via a point or in exponential form, can be input to the program
+- Calculation should be performed after the complete entry of the calculated expression and pressing the symbol =
+- Calculation of arbitrary bracketed arithmetic expressions in infix notation
+- Calculation of arbitrary bracketed arithmetic expressions in infix notation with substitution of x variable as a number
+- Plotting a function defined using an expression in infix notation with the variable x (with coordinate axes, scale marker, and grid with adaptive step)
+- It is not necessary to provide the user with the ability to change the scale
+- The range of definition and the range of value of the functions are at least limited to numbers from -1000000 to 1000000
+- To plot a function it is necessary to additionally specify the displayed area of definition and area of value
+- Checked accuracy of the fractional part is at least 7 decimal places
+- The user must be able to enter up to 255 characters
 - Bracketed arithmetic expressions in infix notation must support the following arithmetic operations and mathematical functions:
    - **Arithmetic operators**:
      | Operator name | Infix notation <br /> (Classic) | Prefix notation <br /> (Polish notation) |  Postfix notation <br /> (Reverse Polish notation) |
