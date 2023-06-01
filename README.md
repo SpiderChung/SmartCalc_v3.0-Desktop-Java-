@@ -122,7 +122,7 @@ there must be no interface code in the model, presenter and view model
       | Modulus | a mod b | mod a b | a b mod |
       | Unary plus | +a | +a | a+ |
       | Unary minus | -a | -a | a- |
-      >Note that the multiplication operator contains the obligatory sign `*`. Processing an expression with the omitted `*` sign is optional and is left to the developer's decision
+      >Please note that the multiplication operator contains a mandatory * sign. Processing an expression with the * sign omitted is optional and left to the developer's discretion
    - **Functions**:
       | Function description | Function |
       | ------ | ------ |
@@ -136,7 +136,7 @@ there must be no interface code in the model, presenter and view model
       | Computes natural logarithm | ln(x) |
       | Computes common logarithm | log(x) |
 
-## Part 2. Bonus. Credit calculator
+## Part 2. Bonus. Loan сalculator
 
 Provide a special mode "credit calculator" (you can take banki.ru and calcus.ru as an example):
 - Input: total credit amount, term, interest rate, type (annuity, differentiated)
@@ -147,3 +147,23 @@ Provide a special mode "credit calculator" (you can take banki.ru and calcus.ru 
 Provide a special mode "deposit profitability calculator" (you can take banki.ru and calcus.ru as an example):
 - Input: deposit amount, deposit term, interest rate, tax rate, periodicity of payments, capitalization of interest, replenishments list, partial withdrawals list
 - Output: accrued interest, tax amount, deposit amount by the end of the term
+
+## Part 4. Bonus. Configuration and logging
+Add settings to the application:
+
+- Add reading of settings from configuration file when the program runs
+- Include in the configuration file 3 or more parameters to choose from, such as background color, font size, etc.
+- Add descriptions of editable parameters to help
+- Add logging to the application:
+
+Store operation history in logs
+- Save logs in the logs folder, one file per rotation period
+- It should be possible to set the period of logs rotation (hour/day/month)
+- Files must be named according to the following pattern: logs_dd-MM-yy-hh-mm-ss (the time of file creation)
+
+## Part 5. Bonus. Cross-platform
+Make your application cross-platform:
+
+- Add support for Linux
+- Add support for Windows
+- The installer should also be available for Linux and Windows (several different installers are allowed)
