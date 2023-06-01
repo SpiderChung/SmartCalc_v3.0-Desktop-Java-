@@ -17,6 +17,7 @@ The russian version of the task can be found in the repository.
    3.4. [Part 4](#part-4-bonus-configuration_and_logging) \
    3.5. [Part 5](#part-5-bonus-cross_platform)
 
+[Part 5](#part-5-bonus-cross-platform)
 ## Chapter I
 
 ![smartcalcv3.0](smartcalc3.0_subject.png)
