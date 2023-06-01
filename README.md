@@ -61,7 +61,7 @@ In this project you will implement an extended version of the usual calculator i
 
 ## Chapter II
 
-### MVC pattern
+### MVP pattern
 
 The MVP pattern has two components in common with MVC: the model and the view. But it replaces the controller with a presenter.
 
