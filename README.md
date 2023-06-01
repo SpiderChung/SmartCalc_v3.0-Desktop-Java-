@@ -51,9 +51,7 @@ Buildings, palm trees, and people with dogs flew by the window. California is us
 
 *- “And not only to it, right, Eve? Chuck said. I've got some documents here that I think you might find interesting, so where are they...“* Who knows where this conversation would have gone if not for the simultaneous beeping and vibrating of smartphones in everyone's pockets that occurred at that moment.
 
----… | ***… | ___…
----… | ***… | ___…
-
+>Greetings to all! I'm very happy that you were interested and were able to get to your destination right in time. You are gathered here for a reason and will indeed get all the answers. But only after a little test. There is one task that they liked to test me on. But now it's time to switch places a little bit. Prove that you are ready and able to handle the tasks ahead, and then I will answer all of your questions. A test with details is already waiting for you in your personal repositories. Please begin immediately. Thank you.
 Chuck couldn't keep a slight smile off his face and whispered just one word:
 
 *- “The Terminator...“*
